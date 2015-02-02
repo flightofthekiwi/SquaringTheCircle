@@ -1,0 +1,29 @@
+import turtle
+import time
+
+def draw_square():
+    window = turtle.Screen()
+    window.bgcolor("red")
+
+    brad = turtle.Turtle()
+
+    numtimes = 36
+    numstep = 1
+
+    degrees = 10
+
+    while(numstep <= numtimes):
+        brad.forward(100)
+        brad.right(90)
+        brad.forward(100)
+        brad.right(90)
+        brad.forward(100)
+        brad.right(90)
+        brad.forward(100)
+        brad.right(90+degrees)
+        numstep += 1
+
+    window.exitonclick()
+    time.sleep(120)
+
+draw_square()
